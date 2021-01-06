@@ -1,0 +1,59 @@
+:root {
+    /* --fuentePrincipal:  'Gothic A1', sans-serif;
+    --fuenteSecundaria: 'Oswald', sans-serif; */
+    --primario: #f1a94e;
+    --secundario: #44b3c2;
+    --claro: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+.container-infoprincipal {
+    background-image: url('../img/develop.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.contenedor {
+    display: grid;
+    height: 100vh;
+    align-content: center;
+}
+
+.container-infoprincipal h1 {
+    color: var(--claro);
+}
+
+.container-infoprincipal .contenido {
+    /* text-align: center; */
+    color: var(--claro);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contenido p {
+    font-size: 1.4rem;
+}
+
+.contenido h1 {
+    font-size: 5rem;
+}
+
+.info-personal {
+    margin-top: 3rem;
+}
+.info-personal p {
+    font-size: 1rem;
+    color: var(--claro)
+}
