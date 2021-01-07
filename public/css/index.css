@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+ul{
+    margin: 0;
+
+}
+
 html {
     box-sizing: border-box;
 }
@@ -53,7 +58,35 @@ html {
 .info-personal {
     margin-top: 3rem;
 }
+
 .info-personal p {
     font-size: 1rem;
     color: var(--claro)
+}
+
+/* Navbar */
+
+.container-navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.container-navbar h1{
+   font-size: 2rem; 
+   flex: 1 1 40%;
+   color: var(--claro);
+
+}
+.container-navbar .nav-items {
+    flex: 1 1 60%;
+}
+
+.nav-items ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--claro);
 }
