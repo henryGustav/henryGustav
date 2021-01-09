@@ -1,5 +1,32 @@
 import React from 'react';
 const NavBar = () => {
+
+    const listNav = [{
+        code: '.container-about',
+        name: 'Acerca de Mi',
+
+    },
+    {
+        code: '.container-trabajos ',
+        name: 'Trabajos',
+
+    }, {
+        code: 3,
+        name: 'Otros Proyectos',
+
+    },
+    {
+        code: 4,
+        name: 'Contacto',
+
+    },
+    ]
+
+    const handleClickNav = (code) => {
+
+        const jumbotron = document.querySelector(`${code}`);
+        jumbotron.scrollIntoView({ behavior: "smooth" });
+    }
     return (
 
         <div className='container-navbar'>
@@ -9,10 +36,11 @@ const NavBar = () => {
             <div className='nav-items'>
                 <nav>
                     <ul>
-                        <li>Acerca de mi</li>
-                        <li>Experiencia</li>
-                        <li>Otros Proyectos</li>
-                        <li>Contacto</li>
+                        {listNav.map((item, index) => (
+                            <li key={index} onClick={() => handleClickNav(item.code)}>{item.name}</li>
+                        ))}
+
+
                         <button >Hoja de Vida</button>
                     </ul>
                 </nav>

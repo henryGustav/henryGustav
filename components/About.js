@@ -19,7 +19,7 @@ const About = () => {
 
             <p>Entre las tecnologias que he trabajado recientemente estan: </p>
 
-            <div>
+            <div className='tecnologias'>
 
 
 
