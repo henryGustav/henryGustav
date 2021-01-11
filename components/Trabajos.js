@@ -7,18 +7,17 @@ const Trabajos = () => {
     const trabajos = [
         {
             code: 'Tecnomega',
-            img: 'https://compras.easybox.com.ec/images/Logo/logobox_easy.png'
-        },
-
-        {
-            code: 'Easybox',
             img: 'https://tecnomegastore.ec/img/tms_logovw.svg'
         },
+
         {
             code: 'Quasad',
             img: 'https://quasad.tech/img/logos/TM.svg'
-        }
-
+        },
+        {
+            code: 'Easybox',
+            img: 'https://compras.easybox.com.ec/images/Logo/logobox_easy.png'
+        },
 
     ]
     return (
@@ -41,6 +40,15 @@ const Trabajos = () => {
                         </div>
                     ))}
                 </Carousel>
+            </div>
+
+            <div className="trabajos">
+                {trabajos.map(trabajo => (
+                    <div className="trabajo" key={trabajo.code}>
+                        <img src={trabajo.img} alt="" />
+                        <p>{trabajo.code}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );

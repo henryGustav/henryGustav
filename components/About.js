@@ -12,16 +12,11 @@ const About = () => {
 
                 Me gusta aprender siempre de nuevas herramientas y tendencias de programacịon que puedan aportar a los proyectos
                 que desarrollo.
-
-
-
             </p>
 
             <p>Entre las tecnologias que he trabajado recientemente estan: </p>
 
             <div className='tecnologias'>
-
-
 
                 <ul>
                     <li>React</li>

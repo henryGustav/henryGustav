@@ -6,6 +6,7 @@ import NavBar from "../components/NavBar";
 import Trabajos from "../components/Trabajos";
 import PrincipalScreen from "../components/PrincipaScreen";
 import OtrosProyectos from "../components/OtrosProyectos";
+import Conocimientos from "../components/Conocimientos";
 const index = () => {
   return (
     <Layout>
@@ -16,7 +17,8 @@ const index = () => {
 
         <About />
         <Trabajos />
-        <OtrosProyectos/>
+        <Conocimientos />
+        <OtrosProyectos />
       </div>
 
       {/* <Nav /> */}
