@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const About = () => {
+
+
+  
     return (
 
         <div className='container-about'>
@@ -35,6 +38,8 @@ const About = () => {
                     <li>HTML CSS JavaScript</li>
                 </ul>
             </div>
+
+        
         </div>
     );
 }

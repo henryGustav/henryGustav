@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import $ from "jquery";
+import { Drawer, Button, Radio, Space } from 'antd';
+
 const NavBar = () => {
+    const [visible, setvisible] = useState(false)
 
 
     const [flag, setflag] = useState('stycky')
@@ -31,9 +34,18 @@ const NavBar = () => {
     }
 
 
+    const showDrawer = () => {
+        setvisible(true)
+    };
+
+    const onClose = () => {
+        setvisible(false)
+
+    };
+
     useEffect(() => {
 
-        
+
         handleClickNav('.container-infoprincipal')
 
         let scroll = $(document).scrollTop()
@@ -78,7 +90,29 @@ const NavBar = () => {
                     </ul>
                 </nav>
             </div>
-            
+
+            <div className='menu-hamburguesa'>
+
+                <button className='btn-icon-hamburguesa ' onClick={showDrawer}>
+
+                    <i className="fas fa-bars"></i>
+                </button>
+
+            </div>
+
+            <Drawer
+                title="Basic Drawer"
+                placement={'left'}
+                closable={false}
+                onClose={onClose}
+                visible={visible}
+                key={'left'}
+            >
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+            </Drawer>
+
         </div>
     );
 }
