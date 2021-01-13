@@ -13,15 +13,18 @@
   "license": "ISC",
   "dependencies": {
     "antd": "^4.8.2",
+    "autoprefixer": "^10.2.1",
     "axios": "^0.21.0",
     "jquery": "^3.5.1",
     "jsdom": "^16.4.0",
     "next": "^10.0.1",
+    "postcss": "^8.2.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-image-magnifiers": "^1.4.0",
     "react-responsive-carousel": "^3.2.11",
     "react-responsive-modal": "^5.2.6",
-    "react-share": "^4.3.1"
+    "react-share": "^4.3.1",
+    "tailwindcss": "^2.0.2"
   }
 }
