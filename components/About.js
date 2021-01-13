@@ -36,6 +36,7 @@ const About = () => {
 
                 <ul>
                     <li>HTML CSS JavaScript</li>
+                    Tail
                 </ul>
             </div>
 

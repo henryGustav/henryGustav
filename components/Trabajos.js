@@ -1,25 +1,34 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import Router from "next/router";
 
 const Trabajos = () => {
 
     const trabajos = [
         {
-            code: 'Tecnomega',
+            code: 'tecnomega',
+            name: 'Tecnomega',
             img: 'https://tecnomegastore.ec/img/tms_logovw.svg'
         },
 
         {
-            code: 'Quasad',
+            code: 'quasad',
+            name: 'Quasad',
             img: 'https://quasad.tech/img/logos/TM.svg'
         },
         {
-            code: 'Easybox',
+            code: 'easybox',
+            name: 'Easybox',
             img: 'https://compras.easybox.com.ec/images/Logo/logobox_easy.png'
         },
 
     ]
+
+    const handleClicTrabajo = (trabajo) => {
+        console.log(trabajo);
+        Router.push("/trabajo/[id]", `/trabajo/${trabajo}`);
+    }
     return (
 
         <div className='container-trabajos'>
@@ -35,7 +44,7 @@ const Trabajos = () => {
                     stopOnHover={false}
                 >
                     {trabajos.map((trabajo) => (
-                        <div key={trabajo.code} onClick={() => { console.log("Gojdf") }}>
+                        <div key={trabajo.code} onClick={() => handleClicTrabajo(trabajo.code)}>
                             <img src={trabajo.img} />
                         </div>
                     ))}
@@ -46,7 +55,7 @@ const Trabajos = () => {
                 {trabajos.map(trabajo => (
                     <div className="trabajo" key={trabajo.code}>
                         <img src={trabajo.img} alt="" />
-                        <p>{trabajo.code}</p>
+                        <p>{trabajo.name}</p>
                     </div>
                 ))}
             </div>
