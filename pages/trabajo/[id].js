@@ -25,6 +25,22 @@ const arrayTrabajos = [
   }
 ]
 
+// skills
+/*
+    https://bchiang7.github.io/v1/img/skills/html.png
+    https://bchiang7.github.io/v1/img/skills/css.png
+    https://bchiang7.github.io/v1/img/skills/js.png
+    https://bchiang7.github.io/v1/img/skills/java.png
+    https://bchiang7.github.io/v1/img/skills/angular.png
+    https://bchiang7.github.io/v1/img/skills/mongodb.png
+    https://bchiang7.github.io/v1/img/skills/github.png
+    https://bchiang7.github.io/v1/img/skills/github.png
+    https://bchiang7.github.io/v1/img/skills/node.png
+    https://bchiang7.github.io/v1/img/skills/linux.png
+    https://bchiang7.github.io/v1/img/skills/bootstrap.png
+
+*/
+
 const Trabajo = ({ idTrabajo }) => {
   console.log(idTrabajo)
   const workSelect = arrayTrabajos.find(trabajo => trabajo.code === idTrabajo)
@@ -40,7 +56,6 @@ const Trabajo = ({ idTrabajo }) => {
 
 Trabajo.getInitialProps = async ctx => {
   const { id } = await ctx.query
-
   return { idTrabajo: id }
 }
 export default Trabajo

@@ -1,9 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-
+import ModalTrabajo from '../components/ModalTrabajo'
 
 const Layout = props => {
-
   return (
     <div className='mega-home'>
       <Head>
@@ -14,9 +13,8 @@ const Layout = props => {
           name='viewport'
           content='width = device-width, initial-scale = 1'
         />
-
-     
       </Head>
+      <ModalTrabajo />
       {props.children}
     </div>
   )

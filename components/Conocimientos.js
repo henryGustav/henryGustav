@@ -3,7 +3,7 @@ import React from 'react'
 const Conocimientos = () => {
   return (
     <div className='container-conocimientos'>
-      <h1 className='text-lg'>Conocimientos</h1>
+      <h1 className='font-arvo font-normal text-2xl sm:text-3xl mb-3'>Conocimientos</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full'>
         <div className='item-conocimiento conocimientos-front-end '>
           <div className='flex justify-between items-center px-4  py-2 '>
