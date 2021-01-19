@@ -2,59 +2,66 @@ import React, { useState } from 'react'
 
 const recentTecnologies = [
   {
-    code: '1',
+    code: 'java',
     name: 'Java',
     img: 'https://bchiang7.github.io/v1/img/skills/java.png'
   },
   {
-    code: '2',
+    code: 'node',
     name: 'Node.js',
     img: 'https://bchiang7.github.io/v1/img/skills/node.png'
   },
   {
-    code: '3',
+    code: 'mysql',
     name: 'MySql',
     img: 'https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png'
   },
   {
-    code: '4',
+    code: 'mongo',
     name: 'Mongo',
     img: 'https://bchiang7.github.io/v1/img/skills/mongodb.png'
   },
   {
-    code: '5',
+    code: 'react',
     name: 'React',
     img:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png'
   },
   {
-    code: '6',
+    code: 'next',
+    name: 'Next.js',
+    img:
+      'https://res.cloudinary.com/avatarhzh/image/upload/v1523067665/portfolio/tech-stack/nextjs.png'
+  },
+
+  {
+    code: 'angular',
     name: 'Angular',
     img: 'https://bchiang7.github.io/v1/img/skills/angular.png'
   },
 
   {
-    code: '7',
+    code: 'git',
     name: 'Git',
     img: 'https://bchiang7.github.io/v1/img/skills/github.png'
   },
   {
-    code: '8',
+    code: 'html',
     name: 'Html',
     img: 'https://bchiang7.github.io/v1/img/skills/html.png'
   },
   {
-    code: '9',
+    code: 'css',
     name: 'Css',
     img: 'https://bchiang7.github.io/v1/img/skills/css.png'
   },
   {
-    code: '10',
+    code: 'js',
     name: 'JavaScript',
     img: 'https://bchiang7.github.io/v1/img/skills/js.png'
   },
   {
-    code: '11',
+    code: 'tailwind',
     name: 'Tailwindcss',
     img:
       'https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png'
@@ -68,7 +75,9 @@ const recentTecnologies = [
 const About = () => {
   return (
     <div className='container-about'>
-      <h1 className='font-arvo font-normal text-2xl sm:text-3xl'>Algo acerca de mí</h1>
+      <h1 className='font-arvo font-normal text-2xl sm:text-3xl'>
+        Algo acerca de mí
+      </h1>
 
       <p className='font-montserrat text-lg font-medium	'>
         Hola ! mi nombre es Henry Tipantuña, Ingeniero informatico. A lo largo
