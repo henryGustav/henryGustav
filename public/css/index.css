@@ -286,3 +286,9 @@ html {
 .react-responsive-modal-closeButton {
   fill: white;
 }
+
+/* Footer */
+.footer{
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+}

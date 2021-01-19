@@ -17,9 +17,6 @@ class MyDocument extends Document {
             rel='stylesheet'
           />
           
-          <style>
-            
-          </style>
         </Head>
         <body>
           
