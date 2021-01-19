@@ -179,7 +179,9 @@ html {
 }
 
 /* Trabajos */
-
+.slide-app {
+  cursor: pointer;
+}
 .container-trabajos {
   padding: 2rem 2rem;
 }
@@ -256,12 +258,12 @@ html {
   padding: 1rem;
 }
 
-/* EN Tailwind */
+/* En Tailwind */
 
 .list-tecnologias li:before {
   content: '▷';
   margin-left: -20px;
   margin-right: 10px;
   color: #64ffda;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
