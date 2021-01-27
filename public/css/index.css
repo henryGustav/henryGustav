@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400&family=Arvo:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@600;700&family=Montserrat:wght@200;300;400&family=Teko:wght@300;400;500&family=Varela+Round&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   /* --fuentePrincipal:  'Gothic A1', sans-serif;
     --fuenteSecundaria: 'Oswald', sans-serif; */
@@ -14,12 +14,7 @@ body {
   background-color: #082a35;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -27,9 +22,7 @@ ul {
   margin: 0;
 }
 
-*,
-*:after,
-*:before {
+*, *:after, *:before {
   box-sizing: inherit;
 }
 
@@ -47,6 +40,7 @@ html {
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
+  z-index: 5;
 }
 
 .contenedor {
@@ -64,19 +58,6 @@ html {
   color: var(--claro);
   width: 60%;
   margin: 0 auto;
-}
-
-.contenido p {
-  font-size: 1.4rem;
-}
-
-.info-personal {
-  margin-top: 3rem;
-}
-
-.info-personal p {
-  font-size: 1rem;
-  color: var(--claro);
 }
 
 /* Navbar */
@@ -172,13 +153,22 @@ html {
   color: var(--claro);
 }
 
-.tecnologias li:before {
+.tecnologias img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+/* .tecnologias li:before {
   content: '🌀';
   margin-left: -20px;
   margin-right: 10px;
-}
+} */
 
 /* Trabajos */
+
+.slide-app {
+  cursor: pointer;
+}
 
 .container-trabajos {
   padding: 2rem 2rem;
@@ -191,6 +181,7 @@ html {
 .trabajos .trabajo img {
   width: 100%;
 }
+
 .carousel .slider-wrapper.axis-horizontal .slider .slide {
   padding: 2rem !important;
 }
@@ -256,12 +247,87 @@ html {
   padding: 1rem;
 }
 
-/* EN Tailwind */
+/* En Tailwind */
 
 .list-tecnologias li:before {
   content: '▷';
   margin-left: -20px;
   margin-right: 10px;
   color: #64ffda;
-  font-size: .8rem;
+  font-size: 0.8rem;
+}
+
+/* modal trabajo */
+
+.customModal {
+  background: #ffffff;
+  min-width: 100%;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0;
+  background-color: #082a35;
+}
+
+@media (min-width: 768px) {
+  .customModal {
+    min-width: 70%;
+    width: 76%;
+  }
+}
+
+.react-responsive-modal-closeButton {
+  fill: white;
+}
+
+.button-sitio {
+  background-color: #BA263A;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: .4s;
+}
+
+.button-sitio:focus {
+  outline: none;
+}
+
+.button-sitio:hover {
+  background-color: #871C2A;
+}
+
+/* Footer */
+
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+}
+
+/* Redes Float */
+
+.redes-float-container {
+  /* position: fixed; */
+  /* top: 100vh; */
+  position: fixed;
+  /* z-index: 999999999; */
+  top: 580px;
+  left: 33px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-float-container i {
+  font-size: 2rem;
+  color: var(--claro);
+  padding-bottom: 2rem;
+}
+
+
+
+.redes-float-container:after {
+  content: '';
+  width: 2px;
+  height: 180px;
+  background-color: white;
+  margin: 0 auto;
 }
