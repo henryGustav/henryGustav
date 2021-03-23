@@ -111,7 +111,7 @@ const About = () => {
         </ul> */}
         <ul className='grid grid-cols-2 sm:grid-cols-4 gap-3 items-center w-full p-4 '>
           {recentTecnologies.map(tecno => (
-            <li key={tecno.code}>
+            <li key={tecno.code} className='tecno-content'>
               <img className='mx-auto  ' src={tecno.img} alt='' />
             </li>
           ))}

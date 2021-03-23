@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   /* --fuentePrincipal:  'Gothic A1', sans-serif;
     --fuenteSecundaria: 'Oswald', sans-serif; */
@@ -67,10 +66,6 @@ html {
   width: 60%;
   margin: 0 auto;
 }
-
-
-
-
 
 /* Navbar */
 
@@ -165,8 +160,8 @@ html {
   color: var(--claro);
 }
 
-.tecnologias img{
-  max-width: 80px ;
+.tecnologias img {
+  max-width: 80px;
   max-height: 80px;
 }
 /* .tecnologias li:before {
@@ -288,7 +283,30 @@ html {
 }
 
 /* Footer */
-.footer{
+.footer {
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem;
+}
+
+/* Estilos */
+.tecno-content {
+  transform: translateX(0);
+}
+
+/* .tecno-content:before {
+  content: '';
+  border-style: solid;
+  border-width: 0px 10px 10px 10px;
+  border-color: transparent #a8cf45 transparent transparent;
+ 
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+  margin-top: -15px;
+  transition-duration: 0.3s;
+} */
+
+.tecno-content:hover {
+  transform: translateY(-15px);
+  transition-duration: 0.2s;
 }
