@@ -24,7 +24,7 @@
     "react-image-magnifiers": "^1.4.0",
     "react-responsive-carousel": "^3.2.11",
     "react-responsive-modal": "^5.2.6",
-    "react-share": "^4.3.1",
-    "tailwindcss": "^2.0.2"
-  }
+    "react-share": "^4.3.1"
+  },
+  "devDependencies": {}
 }

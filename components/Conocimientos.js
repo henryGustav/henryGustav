@@ -29,8 +29,9 @@ const Conocimientos = () => {
             </p>
             <i className='fas fa-file-code text-4xl'></i>
           </div>
+
           <ul className='list-tecnologias list-inside	ml-12 pt-3'>
-            <li>React</li>
+            <li>React.js</li>
             <li>Next.js</li>
             <li>Angular 4 o superior</li>
             <li>HTML5</li>

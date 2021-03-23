@@ -7,16 +7,18 @@ import PrincipalScreen from '../components/PrincipaScreen'
 import OtrosProyectos from '../components/OtrosProyectos'
 import Conocimientos from '../components/Conocimientos'
 import Footer from '../components/Footer'
+import RedesFloat from '../components/RedesFloat'
 const index = () => {
   return (
     <Layout>
       <NavBar />
       <PrincipalScreen />
       <div className='sub-components flex flex-col '>
+        <RedesFloat />
         <About />
         <Trabajos />
         <Conocimientos />
-        {/* <OtrosProyectos /> */}
+        <OtrosProyectos />
       </div>
 
       <Footer />
