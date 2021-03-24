@@ -68,7 +68,7 @@ const ModalTrabajo = () => {
           <h1 className='font-arvo font-normal text-2xl sm:text-3xl mb-3 text-white text-center'>{workSelect.title}</h1>
           <p className='font-montserrat text-lg font-medium	text-white'>{workSelect.description}</p>
          
-         <img src={workSelect.img} alt='' className='p-4'/>
+         <img src={workSelect.img} alt='' className='p-4 modal-img'/>
 
          <button className='mx-auto block text-white button-sitio'>Visitar el Sitio</button>
         </div>

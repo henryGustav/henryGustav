@@ -16,7 +16,7 @@ const NavBar = () => {
       name: 'Trabajos'
     },
     {
-      code: 3,
+      code: '.container-otros-proyectos',
       name: 'Otros Proyectos'
     },
     {
