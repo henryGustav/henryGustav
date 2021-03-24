@@ -75,7 +75,7 @@ const recentTecnologies = [
 const About = () => {
   return (
     <div className='container-about'>
-      <h1 className='font-arvo font-normal text-2xl sm:text-3xl'>
+      <h1 className=''>
         Algo acerca de mí
       </h1>
 
@@ -109,7 +109,7 @@ const About = () => {
           <li>HTML CSS JavaScript</li>
           <li>Tailwindcss</li>
         </ul> */}
-        <ul className='grid grid-cols-2 sm:grid-cols-4 gap-3 items-center w-full p-4 '>
+        <ul className='stack-tecnologies'>
           {recentTecnologies.map(tecno => (
             <li key={tecno.code} className='tecno-content'>
               <img className='mx-auto  ' src={tecno.img} alt='' />

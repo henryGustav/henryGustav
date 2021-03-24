@@ -1,35 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400&family=Arvo:ital,wght@0,400;0,700;1,400&family=Comfortaa:wght@600;700&family=Montserrat:wght@200;300;400&family=Teko:wght@300;400;500&family=Varela+Round&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 :root {
   /* --fuentePrincipal:  'Gothic A1', sans-serif;
     --fuenteSecundaria: 'Oswald', sans-serif; */
-  --primario: #f1a94e;
+  --primario: #082a35;
   --secundario: #44b3c2;
   --claro: #ffffff;
 }
 
 body {
-  background-color: #082a35;
+  background-color: var(--primario);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  color: var(--claro);
 }
 
 ul {
   margin: 0;
 }
 
-*,
-*:after,
-*:before {
+*, *:after, *:before {
   box-sizing: inherit;
 }
 
@@ -56,11 +47,23 @@ html {
   align-content: center;
 }
 
+/* Principal Screen */
+
 .container-infoprincipal .contenido {
   /* text-align: center; */
   color: var(--claro);
   width: 60%;
   margin: 0 auto;
+}
+
+.info-parrafo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+.info-name {
+  font-family: 'Arvo', serif;
+  font-size: 5rem;
 }
 
 /* Navbar */
@@ -149,11 +152,24 @@ html {
 .container-about h1 {
   color: var(--claro);
   margin-bottom: 2rem;
+  font-family: 'Arvo', serif;
   /* font-size: rem; */
 }
 
 .container-about p {
   color: var(--claro);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+}
+
+.stack-tecnologies {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .tecnologias img {
@@ -179,6 +195,7 @@ html {
 
 .container-trabajos h1 {
   color: var(--claro);
+  font-family: 'Arvo', sans-serif;
 }
 
 .trabajos .trabajo img {
@@ -231,7 +248,19 @@ html {
   padding: 2rem;
 }
 
+.conocimientos {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .conocimientos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .container-conocimientos h1 {
+  font-family: 'Arvo', sans-serif;
   color: var(--claro);
 }
 
@@ -254,8 +283,24 @@ html {
   padding: 1rem;
 }
 
-/* En Tailwind */
+.header-conocimiento {
+  display: flex;
+  justify-content: space-around;
+}
 
+.header-conocimiento .title-conocimiento {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header-conocimiento i {
+  font-size: 2rem;
+}
+
+
+.conocimientos ul{
+  list-style: none;
+}
 .list-tecnologias li:before {
   content: '▷';
   margin-left: -20px;
@@ -272,7 +317,7 @@ html {
   width: 100%;
   border-radius: 5px;
   padding: 0;
-  background-color: #082a35;
+  background-color: var(--primario);
 }
 
 @media (min-width: 768px) {
@@ -303,6 +348,7 @@ html {
 }
 
 /* Footer */
+
 .footer {
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem;
@@ -337,6 +383,7 @@ html {
 }
 
 /* Otros proyectos */
+
 .container-otros-proyectos {
   color: var(--claro);
   padding: 2rem;

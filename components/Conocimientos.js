@@ -3,11 +3,11 @@ import React from 'react'
 const Conocimientos = () => {
   return (
     <div className='container-conocimientos'>
-      <h1 className='font-arvo font-normal text-2xl sm:text-3xl mb-3'>Conocimientos</h1>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full'>
-        <div className='item-conocimiento conocimientos-front-end '>
-          <div className='flex justify-between items-center px-4  py-2 '>
-            <p className='uppercase font-bold '>
+      <h1 className=''>Conocimientos</h1>
+      <div className='conocimientos'>
+        <div className='item-conocimiento  '>
+          <div className='header-conocimiento'>
+            <p className='title-conocimiento '>
               Tecnologias del lado del Servidor - BackEnd
             </p>
             <i className='fas fa-laptop-code text-4xl '></i>
@@ -22,9 +22,9 @@ const Conocimientos = () => {
           </ul>
         </div>
 
-        <div className='item-conocimiento conocimientos-front-end'>
-          <div className='flex justify-between items-center px-4  py-2'>
-            <p className='uppercase font-bold'>
+        <div className='item-conocimiento '>
+          <div className='header-conocimiento'>
+            <p className='title-conocimiento'>
               Tecnologias del lado del Cliente - FrontEnd
             </p>
             <i className='fas fa-file-code text-4xl'></i>
@@ -44,8 +44,8 @@ const Conocimientos = () => {
         </div>
 
         <div className='item-conocimiento conocimientos-bd'>
-          <div className='flex justify-between items-center px-4  py-2'>
-            <p className='uppercase font-bold'>Tecnologias de Bases de datos</p>
+          <div className='header-conocimiento'>
+            <p className='title-conocimiento'>Tecnologias de Bases de datos</p>
             <i className='fas fa-database text-4xl'></i>
           </div>
           <ul className='list-tecnologias list-inside	ml-12 pt-3'>
@@ -63,8 +63,8 @@ const Conocimientos = () => {
         </div>
 
         <div className='item-conocimiento conocimientos-tecnologias'>
-          <div className='flex justify-between items-center px-4  py-2'>
-            <p className='uppercase font-bold'>
+          <div className='header-conocimiento'>
+            <p className='title-conocimiento'>
               Tecnologías auxiliares de trabajo
             </p>
             <i className='fas fa-tools text-4xl'></i>
