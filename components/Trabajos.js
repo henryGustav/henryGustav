@@ -34,7 +34,7 @@ const Trabajos = () => {
   }
   return (
     <div className='container-trabajos'>
-      <h1 className='font-arvo font-normal text-2xl sm:text-3xl mb-3'>Trabajos</h1>
+      <h1 className=''>Trabajos</h1>
 
       <div className='slide-app'>
         <Carousel

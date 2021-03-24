@@ -1,10 +1,41 @@
 import React from 'react'
+import OtherProject from './OtherProject'
 const OtrosProyectos = () => {
+
+  const otherProjects = [
+    {
+      title: 'Journal Aplicacion',
+      description: "Aplicación de un Diario, para anotar informacion relevante de tu dia.Realizado con React , Cloudinary , Firebase/Firestore, SASS, patrón de arquitectura Redux.",
+      tools: [
+        'React', 'Firebase', 'Cloudinary'
+      ]
+    },
+    {
+      title: 'Journal Aplicacion',
+      description: "Aplicación de un Diario, para anotar informacion relevante de tu dia.Realizado con React , Cloudinary , Firebase/Firestore, SASS, patrón de arquitectura Redux.",
+      tools: [
+        'React', 'Firebase', 'Cloudinary'
+      ]
+    },
+    {
+      title: 'Journal Aplicacion',
+      description: "Aplicación de un Diario, para anotar informacion relevante de tu dia.Realizado con React , Cloudinary , Firebase/Firestore, SASS, patrón de arquitectura Redux.",
+      tools: [
+        'React', 'Firebase', 'Cloudinary'
+      ]
+    }
+  ]
   return (
     <div className='container-otros-proyectos'>
-      <h1 className='font-arvo font-normal text-2xl sm:text-3xl mb-3'>
+      <h1 className=''>
         Otros Proyectos
       </h1>
+
+      <div className="otros-proyectos">
+        {otherProjects.map(otherpr => (
+          <OtherProject otherProject={otherpr} />
+        ))}
+      </div>
     </div>
   )
 }

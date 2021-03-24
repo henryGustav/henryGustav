@@ -297,10 +297,10 @@ html {
   font-size: 2rem;
 }
 
-
-.conocimientos ul{
+.conocimientos ul {
   list-style: none;
 }
+
 .list-tecnologias li:before {
   content: '▷';
   margin-left: -20px;
@@ -310,6 +310,7 @@ html {
 }
 
 /* modal trabajo */
+
 .customModal {
   background: #ffffff;
   min-width: 100%;
@@ -389,5 +390,6 @@ html {
 }
 
 .container-otros-proyectos h1 {
+  font-family: 'Arvo', sans-serif;
   color: var(--claro);
 }
