@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import $ from 'jquery'
 import { Drawer, Button, Radio, Space } from 'antd'
-
+import { Link } from 'react-scroll'
 const NavBar = () => {
   const [visible, setvisible] = useState(false)
 
   const [flag, setflag] = useState('stycky')
   const listNav = [
     {
-      code: '.container-about',
+      code: 'container-about',
       name: 'Acerca de Mi'
     },
     {
-      code: '.container-trabajos ',
+      code: 'container-trabajos ',
       name: 'Trabajos'
     },
     {
-      code: '.container-otros-proyectos',
+      code: 'container-otros-proyectos',
       name: 'Otros Proyectos'
     },
     {
-      code: 4,
+      code:'4',
       name: 'Contacto'
     }
   ]
@@ -69,9 +69,24 @@ const NavBar = () => {
         <nav>
           <ul>
             {listNav.map((item, index) => (
-              <li key={index} onClick={() => handleClickNav(item.code)}>
-                {item.name}
-              </li>
+              <Link
+              key={item.code}
+                activeClass='active'
+                to={item.code}
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-50}
+                duration={500}
+                delay={1000}
+                isDynamic={true}
+                // onSetActive={this.handleSetActive}
+                // onSetInactive={this.handleSetInactive}
+                ignoreCancelEvents={false}
+              >
+              
+                <li key={index}>{item.name}</li>
+              </Link>
             ))}
 
             <a href='files/HojaVida_HenryTipantuna.pdf' download>

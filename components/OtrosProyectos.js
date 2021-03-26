@@ -6,7 +6,7 @@ const OtrosProyectos = () => {
       title: 'Journal Aplicacion',
       description:
         'Aplicación de un Diario, para anotar informacion relevante de tu dia.Realizado con React, Cloudinary, Firebase/Firestore, SASS, patrón de arquitectura Redux.',
-      tools: ['React', 'Firebase', 'Cloudinary','SASS', 'Redux'],
+      tools: ['React', 'Firebase', 'Cloudinary', 'SASS', 'Redux'],
       url: 'https://henry-gustav-react.gitlab.io/journal-app/',
       git: 'https://gitlab.com/henry-gustav-react/journal-app'
     },
@@ -28,8 +28,8 @@ const OtrosProyectos = () => {
       <h1 className=''>Otros Proyectos</h1>
 
       <div className='otros-proyectos'>
-        {otherProjects.map(otherpr => (
-          <OtherProject otherProject={otherpr} />
+        {otherProjects.map((otherpr, index) => (
+          <OtherProject otherProject={otherpr} key={index} />
         ))}
       </div>
     </div>

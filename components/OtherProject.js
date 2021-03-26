@@ -8,17 +8,19 @@ const OtherProject = ({ otherProject }) => {
           <i className='far fa-folder'></i>
         </a>
         <a href={otherProject.git} target='_blank'>
-          <i class='fab fa-git-alt'></i>
+          <i className='fab fa-git-alt'></i>
         </a>
         <a href={otherProject.url} target='_blank'>
-          <i class='fas fa-external-link-alt'></i>
+          <i className='fas fa-external-link-alt'></i>
         </a>
       </div>
       <h1>{otherProject.title}</h1>
       <p>{otherProject.description}</p>
       <div className='tools-container'>
-        {otherProject.tools.map(tool => (
-          <p className='tools'>{tool}</p>
+        {otherProject.tools.map((tool, index) => (
+          <p className='tools' key={index}>
+            {tool}
+          </p>
         ))}
       </div>
     </div>

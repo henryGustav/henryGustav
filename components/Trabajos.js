@@ -33,7 +33,7 @@ const Trabajos = () => {
     settrabajo(trabajo)
   }
   return (
-    <div className='container-trabajos'>
+    <div className='container-trabajos' id='container-trabajos'>
       <h1 className=''>Trabajos</h1>
 
       <div className='slide-app'>
