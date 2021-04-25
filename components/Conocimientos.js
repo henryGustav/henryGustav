@@ -2,8 +2,8 @@ import React from 'react'
 
 const Conocimientos = () => {
   return (
-    <div className='container-conocimientos'>
-      <h1 className=''>Conocimientos</h1>
+    <div className='container-conocimientos section-padding'>
+      <h1 className='title'>Conocimientos</h1>
       <div className='conocimientos'>
         <div className='item-conocimiento  '>
           <div className='header-conocimiento'>
@@ -11,7 +11,7 @@ const Conocimientos = () => {
               Tecnologias del lado del Servidor - BackEnd
             </p>
             <i className='fas fa-laptop-code text-4xl '></i>
-          </div>
+          </div>ab
           <ul className='list-tecnologias list-inside	ml-12 pt-3'>
             <li>Java</li>
             <li>JavaScript</li>
@@ -22,7 +22,7 @@ const Conocimientos = () => {
           </ul>
         </div>
 
-        <div className='item-conocimiento '>
+        <div className='item-conocimiento'>
           <div className='header-conocimiento'>
             <p className='title-conocimiento'>
               Tecnologias del lado del Cliente - FrontEnd

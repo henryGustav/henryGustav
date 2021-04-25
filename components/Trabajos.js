@@ -33,8 +33,8 @@ const Trabajos = () => {
     settrabajo(trabajo)
   }
   return (
-    <div className='container-trabajos' id='container-trabajos'>
-      <h1 className=''>Trabajos</h1>
+    <div className='container-trabajos section-padding' id='container-trabajos'>
+      <h1 className='title'>Trabajos</h1>
 
       <div className='slide-app'>
         <Carousel
