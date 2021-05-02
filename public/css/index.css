@@ -131,6 +131,7 @@ html {
   font-size: 2rem;
   flex: 1 1 40%;
   color: var(--claro);
+  font-size: 1rem;
 }
 
 .container-navbar .nav-items {
@@ -156,6 +157,9 @@ html {
   }
   .menu-hamburguesa {
     display: none;
+  }
+  .container-navbar h1 {
+    font-size: 1.5rem;
   }
 }
 
@@ -209,13 +213,19 @@ html {
 .container-about p {
   color: var(--claro);
   font-family: 'Montserrat', sans-serif;
-  font-size: var(--fuente-p1);
+  font-size: var(--fuente-p2);
+}
+
+@media screen and (min-width: 768px) {
+  .container-about p {
+    font-size: var(--fuente-p1);
+  }
 }
 
 .stack-tecnologies {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -521,7 +531,7 @@ color: var(--claro);
   color: var(--claro);
   font-size: var(--fuente-t3);
   font-weight: 600;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   position: relative;
   display: flex;
   justify-content: center;
