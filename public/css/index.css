@@ -133,7 +133,12 @@ html {
   color: var(--claro);
   font-size: 1rem;
   font-weight: 700;
-  padding: 0 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-navbar .image-logo {
+    padding: 0 200px;
+  }
 }
 
 .container-navbar .nav-items {
@@ -168,7 +173,7 @@ html {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1300px) {
   .container-navbar .nav-items {
     display: block;
   }
