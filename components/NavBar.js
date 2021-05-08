@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import $ from "jquery";
 import { Drawer, Button, Radio, Space } from "antd";
 import { Link } from "react-scroll";
+
 const NavBar = () => {
   const [visible, setvisible] = useState(false);
 
@@ -10,18 +11,22 @@ const NavBar = () => {
     {
       code: "container-about",
       name: "Acerca de Mi",
+      icon: "fas fa-user",
     },
     {
       code: "container-trabajos ",
       name: "Trabajos",
+      icon: "fas fa-briefcase",
     },
     {
       code: "container-otros-proyectos",
       name: "Otros Proyectos",
+      icon: "fas fa-tasks",
     },
     {
       code: "container-contactos",
       name: "Contacto",
+      icon: "fas fa-phone-square",
     },
   ];
 
@@ -79,11 +84,18 @@ const NavBar = () => {
           // onSetInactive={this.handleSetInactive}
           ignoreCancelEvents={false}
         >
-          <p key={index} onClick={()=>setvisible(false)}>{item.name}</p>
+          <i className={item.icon}></i>
+          <p key={index} onClick={() => setvisible(false)}>
+            {item.name}
+          </p>
         </Link>
       ))}
 
-      <a href="files/HojaVida_HenryTipantuna.pdf" download onClick={()=>setvisible(false)}>
+      <a
+        href="files/HojaVida_HenryTipantuna.pdf"
+        download
+        onClick={() => setvisible(false)}
+      >
         Hoja de Vida
       </a>
     </ul>
@@ -91,8 +103,9 @@ const NavBar = () => {
 
   return (
     <div className={`container-navbar ${flag}`} id="container-navbar">
-      <h1>Henry Tipantuña</h1>
-
+      <div className="image-logo">
+        <img src="img/android-chrome-192x192.png" alt="" width="50" />
+      </div>
       <div className="nav-items">
         <nav>{infoDrawer}</nav>
       </div>

@@ -27,7 +27,7 @@ const OtrosProyectos = () => {
   ];
   return (
     <div className="container-otros-proyectos">
-      <h1 className="title">Algunos Proyectos que he Construido</h1>
+      <h1 className="title">Algunos Proyectos Personales que he Construido</h1>
 
       <div className="otros-proyectos">
         {otherProjects.map((otherpr, index) => (

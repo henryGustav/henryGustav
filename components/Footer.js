@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer section-padding '>
       <p className= 'text-center text-white'>Diseño y Construccion por Henry Tipantuña</p>
       <p className='text-center text-white'>&copy; Henry Tipantuña 2021</p>
 

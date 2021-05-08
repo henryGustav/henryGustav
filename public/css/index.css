@@ -127,16 +127,33 @@ html {
   z-index: 99;
 }
 
-.container-navbar h1 {
+.container-navbar .image-logo {
   font-size: 2rem;
   flex: 1 1 40%;
   color: var(--claro);
   font-size: 1rem;
+  font-weight: 700;
+  padding: 0 200px;
 }
 
 .container-navbar .nav-items {
   flex: 1 1 60%;
   display: none;
+}
+
+.container-navbar .nav-items a {
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 0;
+}
+
+.container-navbar .nav-items a i {
+  margin-right: .3rem;
+  line-height: 0;
 }
 
 .nav-items ul {
@@ -220,6 +237,10 @@ html {
   .container-about p {
     font-size: var(--fuente-p1);
   }
+}
+
+.tecnologias {
+  margin-top: 2rem;
 }
 
 .stack-tecnologies {
@@ -461,6 +482,7 @@ color: var(--claro);
 }
 
 .button-sitio {
+  max-width: 200px;
   background-color: #ba263a;
   padding: 1rem 2rem;
   border-radius: 30px;
@@ -468,6 +490,8 @@ color: var(--claro);
   transition: 0.4s;
   display: block;
   margin: 0 auto;
+  text-decoration: none !important;
+  font-weight: 700;
 }
 
 .button-sitio:focus {
@@ -482,7 +506,7 @@ color: var(--claro);
 
 .footer {
   background: rgba(0, 0, 0, 0.8);
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 /* Redes Float */
