@@ -42,6 +42,28 @@ const NavBar = () => {
   const onClose = () => {
     setvisible(false);
   };
+  useEffect(() => {
+    handleClickNav(".container-infoprincipal");
+
+    let scroll = $(document).scrollTop();
+    let navHeight = $(".container-navbar").outerHeight();
+
+    $(window).scroll(function () {
+      // console.log(scroll);
+      let scrolled = $(document).scrollTop();
+      if (scrolled > navHeight) {
+        $(".container-navbar").addClass("animate");
+      } else {
+        $(".container-navbar").removeClass("animate");
+      }
+      if (scrolled > scroll) {
+        $(".container-navbar").removeClass("stycky");
+      } else {
+        $(".container-navbar").addClass("stycky");
+      }
+      scroll = $(document).scrollTop();
+    });
+  }, []);
 
   const infoDrawer = (
     <ul>
