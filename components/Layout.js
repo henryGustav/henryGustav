@@ -7,6 +7,9 @@ const Layout = (props) => {
     window.onbeforeunload = function () {
       window.scrollTo(0, 0);
     };
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
   }, []);
   return (
     <div className="mega-home flex flex-col">
