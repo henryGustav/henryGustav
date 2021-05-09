@@ -451,12 +451,12 @@ color: var(--claro);
   list-style: none;
 }
 
-.list-tecnologias li:before {
+.list-tecnologias li p:before {
   content: '▷';
   margin-left: -20px;
   margin-right: 10px;
   color: var(--terciario);
-  font-size: 1.1rem;
+  font-size: var(--fuente-p2) !important;
   padding-left: 1rem;
 }
 
@@ -614,7 +614,7 @@ color: var(--claro);
 }
 
 .other-project p {
-  font-size: var(--fuente-p2);
+  font-size: var(--fuente-p2) !important;
   color: var(--gris);
   margin-top: 1rem;
 }
@@ -688,18 +688,31 @@ color: var(--claro);
   font-size: 1.5rem;
 }
 
-.ant-drawer-body ul p::before {
-  content: '▷';
-  margin-left: -20px;
-  margin-right: 10px;
-  color: var(--terciario);
-  font-size: 1.1rem;
-}
-
 .ant-drawer-body ul a {
   font-size: 1.5rem;
   text-decoration: none;
   color: var(--claro);
+}
+
+.draw-menu a {
+  display: flex !important;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-bottom: 1.5rem;
+}
+
+
+.draw-menu a p {
+  line-height: 0;
+  margin: 0 !important;
+}
+
+.draw-menu a i {
+  margin-right: 1rem;
+}
+
+.ant-drawer-content-wrapper {
+  width: 280px !important;
 }
 
 /* Contactos */

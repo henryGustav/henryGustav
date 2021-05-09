@@ -3,7 +3,7 @@ import React from "react";
 const RedesFloat = () => {
   return (
     <div className="redes-float-container">
-      <i className="fab fa-github"></i>
+      {/* <i className="fab fa-github"></i> */}
       <a href="mailto:gustavo_1514@outlook.es">
         <i className="fas fa-envelope"></i>
       </a>
