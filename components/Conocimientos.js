@@ -2,7 +2,7 @@ import React from "react";
 
 const conocimientos = [
   {
-    title: "TECNOLOGIAS DEL LADO DEL SERVIDOR - BACKEND",
+    title: "TECNOLOGÍAS DEL LADO DEL SERVIDOR - BACKEND",
     tecnologies: [
       { name: "Java" },
       { name: "JavaScript" },
@@ -15,7 +15,7 @@ const conocimientos = [
   },
 
   {
-    title: "Tecnologias del lado del Cliente - FrontEnd",
+    title: "Tecnologías del lado del Cliente - FrontEnd",
     tecnologies: [
       { name: "React.js" },
       { name: "Next.js" },
@@ -31,7 +31,7 @@ const conocimientos = [
   },
 
   {
-    title: "Tecnologias de Bases de datos",
+    title: "Tecnologías de Bases de datos",
     tecnologies: [
       { name: "MySql" },
       { name: "PostgreSQL" },

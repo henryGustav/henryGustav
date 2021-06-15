@@ -10,7 +10,7 @@ const PrincipalScreen = () => {
 
           <div className="info-personal">
             <p className="info-parrafo mt-4">
-              Soy un Ingeniero Informatico, recidente en la ciudad de
+              Soy un Ingeniero Informático, residente en la ciudad de
             </p>
             <p>Quito - Ecuador</p>
             <br />
