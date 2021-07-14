@@ -9,7 +9,7 @@ const Contactos = () => {
       </div>
 
       <p className="mb-4">
-        Podemos establecer conversacion, con gusto respondere tus preguntas.
+        Podemos establecer conversación, con gusto responderé tus preguntas.
       </p>
 
       <div className="btn-contact">

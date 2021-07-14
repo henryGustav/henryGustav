@@ -13,7 +13,7 @@ const OtrosProyectos = () => {
     {
       title: 'Lading Page',
       description:
-        'Pagina de presentacion responsive, implementable a diversas empresas. Realizado con HTML, CSS, Javascript y Bootstrap 5',
+        'Pagina de presentación responsive, implementable a diversas empresas. Realizado con HTML, CSS, Javascript y Bootstrap 5',
       tools: ['HTML', 'CSS', 'Java Script', 'Bootstrap 5'],
       url: 'https://henrygustavo1514.gitlab.io/landing-page-appmovil',
       git: 'https://gitlab.com/henryGustavo1514/landing-page-appmovil'
