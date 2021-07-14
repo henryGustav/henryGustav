@@ -552,7 +552,7 @@ color: var(--claro);
 
 .container-otros-proyectos {
   color: var(--claro);
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .container-otros-proyectos .title {

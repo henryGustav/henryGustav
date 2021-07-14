@@ -19,7 +19,15 @@ const OtrosProyectos = () => {
       git: 'https://gitlab.com/henryGustavo1514/landing-page-appmovil'
     },
     {
-      title: 'Landing Page Fashion',
+      title: 'Fresh Fruit Landing Page',
+      description:
+        'Landing page responsive para restaurantes, adaptable para otros productos',
+      tools: ['HTML', 'CSS', 'Java Script', 'Bootstrap'],
+      url: 'https://henrygustavo1514.gitlab.io/landing-page-freshfood/',
+      git: 'https://gitlab.com/henryGustavo1514/landing-page-freshfood'
+    },
+    {
+      title: 'Fashion Landing Page',
       description:
         'Landing page responsive para productos de moda, adaptable a otros productos. HTML, CSS, Javascript',
       tools: ['HTML', 'CSS', 'Java Script'],
@@ -28,7 +36,7 @@ const OtrosProyectos = () => {
     }
   ]
   return (
-    <div className='container-otros-proyectos'>
+    <div className='container container-otros-proyectos'>
       <h1 className='title'>Algunos Proyectos Personales que he Construido</h1>
 
       <div className='otros-proyectos'>

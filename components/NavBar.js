@@ -68,7 +68,6 @@ const NavBar = () => {
   const infoDrawer = (
     <ul>
       {listNav.map((item, index) => {
-        console.log(item.code);
         return (
           <Link
             key={item.code}
