@@ -9,15 +9,14 @@ on:
   pull_request:
     branches: [ "master" ]
 
-permissions:
-  id-token: write
-  contents: read # default
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    permissions:
+      id-token: write
+      contents: read # default
     strategy:
       matrix:
         node-version: [14.x]
