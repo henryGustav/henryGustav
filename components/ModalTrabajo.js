@@ -42,6 +42,8 @@ const ModalTrabajo = () => {
 
   const isGithubActions = process.env.GITHUB_ACTIONS || false
 
+  console.log({ isGithubActions })
+
   return (
     <Modal
       open={modalTrabajo}
