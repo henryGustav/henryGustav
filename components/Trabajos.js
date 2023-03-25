@@ -22,12 +22,11 @@ const Trabajos = () => {
     {
       code: 'easybox',
       name: 'Easybox',
-      img: 'https://compras.easybox.com.ec/images/Logo/logobox_easy.png'
+      img: 'img/logoWork/easybox.png'
     }
   ]
 
   const handleClicTrabajo = trabajo => {
-    console.log(trabajo)
     // Router.push('/trabajo/[id]', `/trabajo/${trabajo}`)
     setmodalTrabajo(true)
     settrabajo(trabajo)

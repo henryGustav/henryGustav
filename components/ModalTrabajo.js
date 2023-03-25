@@ -31,7 +31,7 @@ const ModalTrabajo = () => {
         "El sistema de Ecommerce Easybox es uno de los sitos Web para los que trabaje durante mi estancia en la empresa Sisoftel. Trabajé en todo el diseño , funcionalidad interna de la aplicacion ademas de desarrollar varios modulos en el lado del backend",
       code: "easybox",
       img: "/img/easybox.png",
-      link:'https://compras.easybox.com.ec/portal-easybox/#/home'
+      link:'https://www.easybox.com.ec/'
     },
   ];
 
