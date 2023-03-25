@@ -14,11 +14,11 @@ const isGithubActions = process.env.GITHUB_ACTIONS || false
 let assetPrefix = ''
 let basePath = ''
 
+console.log({ isGithubActions })
 if (isGithubActions) {
-  const repo = 'henryGustav'
-
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
+  //   const repo = 'henryGustav'
+  //   assetPrefix = `/${repo}/`
+  //   basePath = `/${repo}`
 }
 
 const nextConfig = {
