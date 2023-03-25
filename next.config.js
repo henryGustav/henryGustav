@@ -3,8 +3,8 @@
  */
  const nextConfig = {
     /* config options here */
-    basePath: "/nextjs-pages",
-    assetPrefix: "/nextjs-pages"
+    basePath: "/henryGustav.github.io",
+    assetPrefix: "/henryGustav.github.io"
   }
   
   module.exports = nextConfig
