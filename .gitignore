@@ -28,3 +28,4 @@ yarn-error.log*
 # sitemap.xml
 
 /public/sitemap.xml
+package-lock.json
