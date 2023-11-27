@@ -4,7 +4,7 @@
 <h3 align="center">A passionate FullStack Developer from Ecuador</h3>
 <div style="display: flex; justify-content: space-between; align-items: center;">
 
-<div style=">
+<div>
 
 
 🔭 I’m currently working on **Journal App V2**
