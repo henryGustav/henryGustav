@@ -78,11 +78,8 @@ const About = () => {
       <h1 className="title">Algo acerca de mí</h1>
 
       <p className="font-montserrat text-lg font-medium	">
-        Hola ! mi nombre es Henry Tipantuña, Ingeniero informático. A lo largo
-        de mi carrera profesional he desarrollado aplicaciones, con distintas
-        tecnologías en las empresas a las cuales he pertenecido. Me gusta
-        aprender siempre de nuevas herramientas y tendencias de programación que
-        puedan aportar a los proyectos que desarrollo.
+        Hola ! mi nombre es Henry Tipantuña, Desarrollador con mas de 3 años de experiencia en construcción de sitios web.
+        Ademas de trabajar en entrega de código de calidad, me enfoco en la mejora continua del producto, dando puntos de vista críticos de cara a la funcionalidad del negocio.
       </p>
       <br />
       <p className="font-montserrat text-lg font-medium">
