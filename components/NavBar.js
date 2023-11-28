@@ -92,13 +92,13 @@ const NavBar = () => {
         );
       })}
 
-      <a
+      {/* <a
         href="files/HojaVida_HenryTipantuna.pdf"
         download
         onClick={() => setvisible(false)}
       >
         Hoja de Vida
-      </a>
+      </a> */}
     </ul>
   );
 
